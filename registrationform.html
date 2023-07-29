@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styleform.css" />
+  </head>
+  <body>
+    <div class="topheader">
+      <div id="topblue"></div>
+      <div class="header">
+        <h1 class="headertext" style="font-weight: 400; margin-bottom: 15px">
+          Codetrain Registration Form
+        </h1>
+        <p>
+          There are 3 steps in our application process. Firstly, fill out this
+          enrolment form, and then our admissions team will reach out to you to
+          find out if you are a good fit for the program. If you make it
+          through, we will assist you to get started on the admissions process.
+        </p>
+        <hr />
+        <p>
+          <a href="https://www.google.com">Sign in to Google</a> to save your
+          progress.<a href="https://www.google.com">Learn more</a>
+        </p>
+        <hr />
+        <p id="required">* Indicates required question</p>
+      </div>
+    </div>
+
+    <div class="main">
+      <form action="#" method="POST">
+        <div class="child">
+          <label for="email">Email <span>*</span></label
+          ><br />
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="child">
+          <label for="fullname"> Full Name <span>*</span></label
+          ><br />
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+
+        <div class="child">
+          <label for="phone">Phone Number <span>*</span></label
+          ><br />
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="child">
+          <label for="nextofkinphone">
+            Phone number of next of kin<br />
+            Phone number of someone we can reach out to in case your phone is
+            off or not reachable. Eg, your parent, guardian or sibling, or
+            spouse </label
+          ><br />
+          <input
+            type="text"
+            id="nextofkinphone"
+            name="nextofkinphone"
+            required
+          />
+        </div>
+
+        <div class="child">
+          <label for="payment">
+            Can you pay 60% or more of the full Codetrain fees (GHS6000)?
+            <span>*</span>
+          </label>
+          <br />
+          <input type="radio" id="yes" name="payment" value="yes" required />
+          <label for="yes">Yes</label>
+          <br />
+          <input type="radio" id="no" name="payment" value="no" required />
+          <label for="no">No</label>
+          <br />
+        </div>
+
+        <div class="child">
+          <label for="payment"
+            >Please indicate who is going to pay your fees <span>*</span></label
+          >
+          <br />
+          <input
+            type="radio"
+            id="yourself"
+            name="paymentsource"
+            value="yourself"
+            required
+          />
+          <label for="yourself">Yourself</label>
+          <br />
+          <input
+            type="radio"
+            id="parent_sponsor"
+            name="paymentsource"
+            value="parent_sponsor"
+            required
+          />
+          <label for="parent_sponsor">Parent/Sponsor</label>
+          <br />
+          <input
+            type="radio"
+            id="organization"
+            name="paymentsource"
+            value="organization"
+            required
+          />
+          <label for="organization">Organization</label>
+          <br />
+        </div>
+
+        <div class="child">
+          <label for="location">Location <span>*</span></label>
+          <br />
+          <input type="text" id="location" name="location" required />
+          <br /><br />
+        </div>
+
+        <div class="child">
+          <label for="school">Current or previous school <span>*</span></label>
+          <br />
+          <input type="text" id="school" name="school" required />
+          <br /><br />
+        </div>
+
+        <div class="child">
+          <label for="reason"
+            >Why do you want to join Codetrain? <span>*</span></label
+          >
+          <br />
+          <textarea
+            id="reason"
+            name="reason"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+          <br /><br />
+        </div>
+
+        <div class="child">
+          <label for="hear_about"
+            >How did you hear about Codetrain? <span>*</span></label
+          >
+          <br />
+          <input type="text" id="hear_about" name="hear_about" required />
+          <br /><br />
+        </div>
+
+        <p
+          class="footertext"
+          style="margin-top: 25px; margin-bottom: 25px; text-align: center"
+        >
+          A copy of your responses will be emailed to the address you provided.
+        </p>
+        <div id="belowform">
+          <div>
+            <button type="button">Submit Form</button>
+          </div>
+          <progress value="1" max="1"></progress>
+          <span class="progress-text">Page 1 of 1</span>
+          <div>
+            <input type="reset" value="Clear Form" id="reset" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
